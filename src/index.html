@@ -11,12 +11,12 @@
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="css/lv1.css"> -->
-  <!-- 
-  <link rel="stylesheet" href="../dist/style/all.min.css"> -->
+  <link rel="stylesheet" href="css/lv1.css">  -->
+
 </head>
 
 <body>
@@ -47,8 +47,8 @@
               </li>
             </ul>
             <form class="d-flex justify-content-between">
-              <button class="btn btn-warning rounded-pill px-4 me-2 fw-bold Noto-Sans">登入</button>
-
+              <button type="button" class="btn btn-warning rounded-pill px-4 me-2 fw-bold Noto-Sans"
+                data-bs-toggle="modal" data-bs-target="#login">登入</button>
               <button class="btn btn-outline-secondary rounded-pill px-4 fw-bold Noto-Sans">註冊</button>
             </form>
           </div>
@@ -125,10 +125,10 @@
       <div class="container">
         <div class="tab-list d-flex nav nav-pill">
           <a class=" nav-link text-secondary  Noto-Sans " data-bs-toggle="pill" data-bs-target="#nav-project">專案介紹</a>
-          <a class=" nav-link text-secondary  Noto-Sans active" data-bs-toggle="pill"
-            data-bs-target="#nav-issue">常見問答</a>
+          <a class=" nav-link text-secondary  Noto-Sans " data-bs-toggle="pill" data-bs-target="#nav-issue">常見問答</a>
           <a class=" nav-link text-secondary  Noto-Sans " data-bs-toggle="pill" data-bs-target="#nav-progress">目前進度</a>
-          <a class=" nav-link text-secondary  Noto-Sans" data-bs-toggle="pill" data-bs-target="#nav-message">留言</a>
+          <a class=" nav-link text-secondary  Noto-Sans active" data-bs-toggle="pill"
+            data-bs-target="#nav-message">留言</a>
         </div>
       </div>
     </div>
@@ -137,7 +137,7 @@
 
       <div class="row g-5">
         <!-- left   -->
-        <div class="col-8">
+        <div class="col-lg-8">
           <!-- Nav tabs context -->
           <div class="tab-content mb-5" id="nav-tabContent">
             <div class="tab-pane fade  " id="nav-project" role="tabpanel" aria-labelledby="nav-home-tab">
@@ -164,7 +164,7 @@
               </div>
 
             </div>
-            <div class="tab-pane fade show active" id="nav-issue" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="tab-pane fade" id="nav-issue" role="tabpanel" aria-labelledby="nav-profile-tab">
               <!-- accordion -->
               <div class="accordion mb-5" id="accordionExample">
                 <!-- Q1 -->
@@ -287,24 +287,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
-             <!-- Q1 -->
-              <!-- <div class=" question mb-4" data-bs-toggle="collapse" href="#collapse_1">
-                                          <div class=" btn d-flex border p-4 align-items-sm-center">
-                                            <span class="me-3 bg-warning p-2 rounded-2 fw-bold">Q1</span>
-                                            <span class="fs-5 fw-bolder me-auto">影片拍完之後可以編輯嗎？</span>
-                                            <span>&#10010;</span>
-                                          </div>
-                                          <div class="question-content collapse  show" id="collapse_1">
-                                            <div class="d-flex border p-4 fw-lighter fs-5">
-                                              <p class="ms-3">
-                                                可以進行簡易的編輯，內建 5 種濾鏡，影片秒數有3秒、5秒、10秒可以選擇，拍完的當下可以編輯要印出來的影片範圍哦！
-                                              </p>
-                                            </div>
-                                          </div>
-                                        </div> -->
-           </div>
-                                      <div class="tab-pane fade " id="nav-progress" role="tabpanel"
+              </div>   
+            </div>
+             <div class="tab-pane fade " id="nav-progress" role="tabpanel"
                                         aria-labelledby="nav-contact-tab">
                                         <div class="card mb-3 ">
                                           <div class="row g-0">
@@ -373,11 +358,90 @@
                                           </div>
                                         </div>
 
-                                      </div>
-                                      <div class="tab-pane fade" id="nav-message" role="tabpanel"
-                                        aria-labelledby="nav-contact-tab">
-                                        未完成
-                                      </div>
+               </div>
+           <div class="tab-pane fade  show active" id="nav-message" role="tabpanel"
+              aria-labelledby="nav-contact-tab">
+
+                  <!-- 留言 -->
+                  <div class="card border border-2 p-2 mb-3" style="border-radius: 15px;">
+                    <div class="card-body">
+                      <div class="d-flex mb-3">
+                        <img class="me-3 img-fiuid"
+                          src="https://hexschool.github.io/boootstrap5WebLayout/assets/user_img01.jpg"
+                          alt="" srcset="">
+                        <div>
+                          <p class="fs-5 Noto-Sans text-gray-1 mb-0 ls-1">你是誰</p>
+                          <span class="Noto-Sans text-secondary ls-1">2020年5月22日 11:32</span>
+                        </div>
+                      </div>
+                      <p class="ls-1 Noto-Sans text-gray-1">
+                        晚上起床上廁所看到照片裡的人一直動其實有點恐怖，希望可以有暫停或是定時的功能！
+                      </p>
+                      <div class="bg-light p-3 rounded-3">
+                        <span class="text-danger ls-1 Noto-Sans">提案者回覆</span>
+                        <p class="text-gray-1 ls-1 Noto-Sans">你要嘛起床的時候開燈，要嘛給我們更多錢開發阿</p>
+                      </div>
+                    </div>
+                  </div>
+                    <!-- 留言  end-->
+                    <div class="card border border-2 p-2 mb-3" style="border-radius: 15px;">
+                      <div class="card-body">
+                        <div class="d-flex mb-3">
+                          <img class="me-3 img-fiuid"
+                            src="https://hexschool.github.io/boootstrap5WebLayout/assets/user_img02.jpg"
+                            alt="" srcset="">
+                          <div>
+                            <p class="fs-5 Noto-Sans text-gray-1 mb-0 ls-1">他說什</p>
+                            <span class="Noto-Sans text-secondary ls-1">2020年5月22日 11:32</span>
+                          </div>
+                        </div>
+                        <p class="ls-1 Noto-Sans text-gray-1">
+                          希望有更多花色可以選擇！我女兒最近喜歡綠色
+                        </p>                        
+                      </div>
+                    </div>
+                      <!-- 留言  end-->
+
+                      <div class="card border border-2 p-2 mb-3" style="border-radius: 15px;">
+                        <div class="card-body">
+                          <div class="d-flex mb-3">
+                            <img class="me-3 img-fiuid"
+                              src="https://hexschool.github.io/boootstrap5WebLayout/assets/user_img01.jpg"
+                              alt="" srcset="">
+                            <div>
+                              <p class="fs-5 Noto-Sans text-gray-1 mb-0 ls-1">你是誰</p>
+                              <span class="Noto-Sans text-secondary ls-1">2020年5月22日 11:32</span>
+                            </div>
+                          </div>
+                          <p class="ls-1 Noto-Sans text-gray-1">
+                            晚上起床上廁所看到照片裡的人一直動其實有點恐怖，希望可以有暫停或是定時的功能！
+                          </p>
+                          <div class="bg-light p-3 rounded-3">
+                            <span class="text-danger ls-1 Noto-Sans">提案者回覆</span>
+                            <p class="text-gray-1 ls-1 Noto-Sans">你要嘛起床的時候開燈，要嘛給我們更多錢開發阿</p>
+                          </div>
+                        </div>
+                      </div>
+                        <!-- 留言  end-->
+                        <div class="card border border-2 p-2 mb-3" style="border-radius: 15px;">
+                          <div class="card-body">
+                            <div class="d-flex mb-3">
+                              <img class="me-3 img-fiuid"
+                                src="https://hexschool.github.io/boootstrap5WebLayout/assets/user_img02.jpg"
+                                alt="" srcset="">
+                              <div>
+                                <p class="fs-5 Noto-Sans text-gray-1 mb-0 ls-1">說說看</p>
+                                <span class="Noto-Sans text-secondary ls-1">2020年5月22日 11:32</span>
+                              </div>
+                            </div>
+                            <p class="ls-1 Noto-Sans text-gray-1">
+                              test123 看一下我是不是真的可以留言
+                            </p>
+                           
+                          </div>
+                        </div>
+                          <!-- 留言  end-->
+            </div>
                                     </div>
                                     <!-- Nav tabs context End-->
                                     <!-- 贊助專案 -->
@@ -400,8 +464,8 @@
                                     <form class="needs-validation" novalidate>
                                       <div class="mb-3">
                                         <label for="validselect" class="form-label fw-bold">贊助方案</label>
-                                        <select id="validselect" class="form-select bg-light" aria-label="Default select example"
-                                          required>
+                                        <select id="validselect" class="form-select bg-light"
+                                          aria-label="Default select example" required>
                                           <option selected disabled value="">請選擇一個方案</option>
                                           <option value="500">每月 $500</option>
                                           <option value="1000">每月 $1,000</option>
@@ -414,18 +478,16 @@
                                       <div class="mb-3">
                                         <label for="vaildName"
                                           class="form-label fw-bold Noto-Sans text-lightgray">收件人姓名</label>
-                                        <input id="vaildName" type="text" class="form-control bg-light "
-                                          required>
-                                        <div  class=" Noto-Sans  invalid-feedback">
+                                        <input id="vaildName" type="text" class="form-control bg-light " required>
+                                        <div class=" Noto-Sans  invalid-feedback">
                                           請輸入姓名
                                         </div>
                                       </div>
 
                                       <div class="mb-3">
                                         <label for="validTel" class="form-label fw-bold">聯絡電話</label>
-                                        <input type="tel" class="form-control bg-light" id="validTel"
-                                          required>
-                                        <div  class=" Noto-Sans invalid-feedback">
+                                        <input type="tel" class="form-control bg-light" id="validTel" required>
+                                        <div class=" Noto-Sans invalid-feedback">
                                           請輸入電話
                                         </div>
                                       </div>
@@ -433,16 +495,16 @@
                                       <div class="mb-3">
                                         <label for="validemail"
                                           class="form-label fw-bold Noto-Sans text-lightgray ">連絡信箱</label>
-                                        <input type="email" class="form-control bg-light " id="validemail"
-                                          required>
-                                        <div  class=" Noto-Sans invalid-feedback">
+                                        <input type="email" class="form-control bg-light " id="validemail" required>
+                                        <div class=" Noto-Sans invalid-feedback">
                                           請輸入郵件
                                         </div>
                                       </div>
 
                                       <div class="mb-3">
                                         <label for="validpay" class="form-label fw-bold">付款方式</label>
-                                        <select id="validpay" class="form-select bg-light" aria-label="Default select example">
+                                        <select id="validpay" class="form-select bg-light"
+                                          aria-label="Default select example">
                                           <option selected>信用卡付款</option>
                                           <option>ATM</option>
                                         </select>
@@ -460,7 +522,7 @@
 
                                   </div>
                                   <!-- right -->
-                                  <div class="col-4">
+                                  <div class="col-lg-4">
 
                                     <!-- avtor -->
                                     <div class=" border border-2 mb-4 px-3" style="border-radius: 15px;">
@@ -637,6 +699,39 @@
     Copyright � 拼拼 All rights reserved.
   </footer>
 
+
+  <!-- Modal -->
+  <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content border-start-0 border-end-0 border-bottom-0  border-warning border-5">
+        <div class="modal-header ">
+          <h5 class="modal-title fs-3 fw-bold Not-Sans">登入</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="mb-5">
+            <label for="account" class="form-label Noto-Sans fs-5" style="color: #373A3C;">帳號</label>
+            <input type="text" class="form-control bg-light mb-3" id="account">
+            <label for="pwd" class="form-label Noto-Sans fs-5" style="color: #373A3C;">密碼</label>
+            <input type="password" class="form-control bg-light mb-3" id="pwd">
+            <small class="text-secondary">忘記密碼？</small>
+            <button type="button" class="btn btn-warning rounded-pill mt-4 py-3 w-100 Noto-Sans fw-bold">登入</button>
+          </form>
+          <div class="position-relative mb-4 ">
+            <div class="progress " style="height: 1px;">
+              <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="px-2 position-absolute top-0 start-50 translate-middle text-secondary bg-white Noto-Sans">
+              還沒有帳號？
+              <a href="#" class="text-danger Noto-Sans" style="text-decoration:none">註冊一個帳號</>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
