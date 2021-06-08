@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&family=Noto+Sans+TC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+
+
+:root{
+  --my-primary:#FFDF65;
+  --my-secondary:#858377;
+  --my-hover:#FF785E;
+  --my-gray:#494846 ;
+  --my-gray2:#636057 ;
+  --my-bg-white:#F8F9FA;
+}
+
+.logo{
+  width: 111px;
+}
+
+.tab-list .nav-link {
+  cursor: pointer;
+}
+
+
+// 頁籤選取
+.tab-list .nav-link.active {
+  border-bottom: 3px solid var(--my-primary);
+  color: var(--my-gray) !important;
+}
+
+// .question:not(.collapsed){
+//   box-shadow: 0 0 5px var(--my-secondary);
+// }
+
+.shadow-base{
+  box-shadow: 0 0 5px var(--my-secondary);
+}
+
+
+.Noto-Sans{
+  font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+.Baloo-Tamm{ 
+  font-family: 'Baloo Tamma 2', cursive;
+}
+
+.text-darkgray{
+  color: var(--my-gray) !important;
+}
+
+.text-lightgray{
+  color: var(--my-gray2) !important;
+}
+.hover-color{
+  color: var(--my-hover);
+}
+
+.bg-hover-color{
+  background-color: var(--my-hover);
+}
+
+.btn-warning{ 
+  color: var(--my-gray2);
+}
+
+.btn-warning:hover{
+  background-color:var(--my-hover);
+  border: 1px solid var(--my-hover);
+  color: white ;
+}
+
+// .btn-outline-secondary{
+//   border: 1px solid var(--my-secondary);
+//   color: var(--my-secondary);
+// }
+
+
+.btn-outline-secondary:hover{
+  background-color: var(--my-primary);
+  border: 1px solid var(--my-primary);
+  color: var(--my-secondary) ;
+} 
+
+.btn-outline-secondary:hover i{ 
+  color: var(--my-hover);
+} 
+
+.header{
+  border-bottom: 5px solid var(--my-primary);
+}
+
+
+// 驗證用 未寫完
+.is-invalid{
+  display: none;
+}
+
+.ls-1{
+  letter-spacing: 1.5px;
+}
+
+.ls-2{
+  letter-spacing: 3px;
+}
