@@ -21,6 +21,7 @@ import 'bootstrap/js/dist/scrollspy';
 //  axios.get('/VsWeb/api/GetLstDicCinema').then(res=>{
 //   console.log(res);
 // })
+// enable tooltips
 
 (function () {
   'use strict'

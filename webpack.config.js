@@ -46,10 +46,13 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss$/,
-        use: [{
+        use: [
+          //MiniCssExtractPlugin.loader,
+          {
           // inject CSS to page
           loader: 'style-loader'
-        }, {
+            }
+        , {
           // translates CSS into CommonJS modules
           loader: 'css-loader'
         }, {
@@ -109,9 +112,9 @@ module.exports = {
 
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: '[name].css'
-    }),
+    // new MiniCssExtractPlugin(
+    //  //{ filename: '[name].css'}
+    // ),
     new HtmlWebpackPlugin({
         title:'bootstrap_5 webpack_5',
         template: './src/index.html',
@@ -124,23 +127,23 @@ module.exports = {
     compress:true,
     contentBase: "./dist",
     port:3030,
-    stats:{
-      assets:true,
-      cached:false,
-      chunkModules:false,
-      chunkOrigins:false,
-      chunks:false,
-      colors:true,
-      hash:true,
-      modules:false
-    },
+    // stats:{
+    //   assets:true,
+    //   cached:false,
+    //   chunkModules:false,
+    //   chunkOrigins:false,
+    //   chunks:false,
+    //   colors:true,
+    //   hash:true,
+    //   modules:false
+    // },
   
-    proxy:{
-      '/VsWeb/api':{
-       target: 'https://www.vscinemas.com.tw',
-       changeOrigin:true
-      }
+    // proxy:{
+    //   '/VsWeb/api':{
+    //    target: 'https://www.vscinemas.com.tw',
+    //    changeOrigin:true
+    //   }
 
-    }
+    // }
   }
 }
