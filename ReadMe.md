@@ -8,10 +8,11 @@
 * bootstrap- v5
 * webpack- v5
 
-## import bootstrap
+## 更動 bootstrap 部分
 
 ```
 不全部載入 bootstrap
 override variables 自訂
 override accordion 自訂
+override utilities 自訂
 ```
