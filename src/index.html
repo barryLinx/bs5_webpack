@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,7 +48,7 @@
             <form class="d-flex justify-content-between">
               <button type="button" class="btn btn-warning rounded-pill px-4 me-2 fw-bold Noto-Sans"
                 data-bs-toggle="modal" data-bs-target="#login">登入</button>
-              <button class="btn btn-outline-secondary rounded-pill px-4 fw-bold Noto-Sans">註冊</button>
+              <button class="btn btn-outline-secondary rounded-pill border-3  px-4 fw-bold Noto-Sans">註冊</button>
             </form>
           </div>
         </div>
@@ -77,7 +76,7 @@
             <div class="progress-bar text-dark bg-warning " role="progressbar" style="width: 41%;" aria-valuenow="41"
               aria-valuemin="0" aria-valuemax="100">41%</div>
           </div>
-          <div class="row">
+          <div class="row g-sm-0">
             <div class="col-lg-6">
               <span class="text-secondary mb-3 Noto-Sans">贊助人數</span>
               <p class="fs-2 fw-bold text-lightgray Baloo-Tamm">1374 <span class="Noto-Sans fs-3">人</span> </p>
@@ -116,16 +115,25 @@
 
             <button class="col-lg-12 btn btn-warning rounded-pill mb-3 fs-3 Noto-Sans">贊助專案</button>
 
-            <div class="col-lg-7 ps-0">
+            <div class="row g-0 g-lg-0 g-md-0">              
+                <buttom class="col-6 col-md-7 col-lg-7  me-lg-auto me-md-auto me-auto btn btn-outline-secondary border-3  rounded-pill  fs-3 Noto-Sans ">
+                  <i class="fas fa-heart custom-heart"></i> 追蹤專案
+                </buttom>
+                <buttom class="col-5 col-md-4 col-lg-4  btn btn-outline-secondary border-3 rounded-pill  fs-3 Noto-Sans ">
+                  <i class="fas fa-share-alt"></i>分享
+                </buttom>              
+            </div>
+
+            <!-- <div class="col-lg-7 col-5 ps-0">
               <buttom class="col-lg-6 btn btn-outline-secondary rounded-pill me-4 w-100 fs-3 Noto-Sans t">
                 <i class="fas fa-heart custom-heart"></i> 追蹤專案
               </buttom>
             </div>
-            <div class="col-lg-5 pe-0">
-              <buttom class="col-lg-5 btn btn-outline-secondary rounded-pill w-100 fs-3 Noto-Sans ">
+            <div class="col-lg-5 col-5 pe-0">
+              <buttom class="col-lg-5 col-5 btn btn-outline-secondary rounded-pill w-100 fs-3 Noto-Sans ">
                 <i class="fas fa-share-alt"></i>分享
               </buttom>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -135,13 +143,13 @@
   <main class="mb-5">
     <!-- Nav tabs  -->
 
-    <div class="border-bottom  bg-white mb-4">
-      <div class="container">
-        <div class="tab-list d-flex nav nav-pill">
-          <a class=" nav-link text-secondary  Noto-Sans " data-bs-toggle="pill" data-bs-target="#nav-project">專案介紹</a>
-          <a class=" nav-link text-secondary  Noto-Sans " data-bs-toggle="pill" data-bs-target="#nav-issue">常見問答</a>
-          <a class=" nav-link text-secondary  Noto-Sans " data-bs-toggle="pill" data-bs-target="#nav-progress">目前進度</a>
-          <a class=" nav-link text-secondary  Noto-Sans active" data-bs-toggle="pill"
+    <div class="border-bottom  bg-white mb-4 position-sticky top-0" style="z-index: 11000;">
+      <div class="container ">
+        <div class="tab-list d-flex flex-nowrap nav nav-pill pt-3 ">
+          <a class="py-1 px-2 px-lg-3 nav-link text-secondary  Noto-Sans " data-bs-toggle="pill" data-bs-target="#nav-project">專案介紹</a>
+          <a class="py-1 px-2 px-lg-3 nav-link text-secondary  Noto-Sans " data-bs-toggle="pill" data-bs-target="#nav-issue">常見問答</a>
+          <a class="py-1 px-2 px-lg-3 nav-link text-secondary  Noto-Sans " data-bs-toggle="pill" data-bs-target="#nav-progress">目前進度</a>
+          <a class="py-1 px-2 px-lg-3 nav-link text-secondary  Noto-Sans active" data-bs-toggle="pill"
             data-bs-target="#nav-message">留言</a>
         </div>
       </div>
@@ -154,7 +162,7 @@
         <div class="col-lg-8">
           <!-- Nav tabs context -->
           <div class="tab-content mb-5" id="nav-tabContent">
-            <div class="tab-pane fade  " id="nav-project" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="tab-pane fade " id="nav-project" role="tabpanel" aria-labelledby="nav-home-tab">
               <div class="d-flex flex-column">
                 <img class="mb-3 img-fluid w-100" src="https://hexschool.github.io/boootstrap5WebLayout/assets/p1.jpg"
                   alt="">
@@ -303,79 +311,68 @@
                 </div>
               </div>   
             </div>
-             <div class="tab-pane fade " id="nav-progress" role="tabpanel"
-                                        aria-labelledby="nav-contact-tab">
-                                        <div class="card mb-3 ">
-                                          <div class="row g-0">
-                                            <div class="col-md-3">
-                                              <img class="img-fluid" style="height: 100%;"
-                                                src="https://hexschool.github.io/boootstrap5WebLayout/assets/news01.jpg"
-                                                alt="...">
-                                            </div>
-                                            <div class="col-md-9 ps-3">
-                                              <div class="card-body ps-2 pe-5  mt-1 pb-0">
-                                                <h5 class="card-title mb-0 Noto-Sans">高雄體驗會｜免費參加送帆布袋</h5>
-                                                <p class="card-text mb-2"><small
-                                                    class="m-0 text-muted Baloo-Tamm">2021-6-20</small></p>
-                                                <span class="text-muted"></span>
-                                                <p class="card-text d-block text-secondary Noto-Sans mb-0">
-                                                  大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！
-                                                </p>
-                                                <a class=" fw-bold btn p-0 3" style="color:#FF785E ;">MORE</a>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div class="card mb-3">
-                                          <div class="row g-0">
-                                            <div class="col-md-3">
-                                              <img class="img-fluid" style="height: 100%;"
-                                                src="https://hexschool.github.io/boootstrap5WebLayout/assets/news02.jpg"
-                                                alt="...">
-                                            </div>
-                                            <div class="col-md-9 ps-3">
-                                              <div class="card-body ps-2 pe-5  mt-1 pb-0">
-                                                <h5 class="card-title mb-0 Noto-Sans">高雄體驗會｜免費參加送帆布袋</h5>
-                                                <p class="card-text mb-2"><small
-                                                    class="m-0 text-muted Baloo-Tamm">2021-6-20</small></p>
-                                                <span class="text-muted"></span>
-                                                <p class="card-text d-block text-secondary Noto-Sans mb-0">
-                                                  大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！
-                                                </p>
-                                                <a class=" fw-bold btn p-0 3" style="color:#FF785E ;">MORE</a>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-
-                                        <div class="card mb-3">
-                                          <div class=" row g-0">
-                                            <div class="col-md-3">
-                                              <img class="img-fluid" style="height: 100%;"
-                                                src="https://hexschool.github.io/boootstrap5WebLayout/assets/news03.jpg"
-                                                alt="...">
-                                            </div>
-                                            <div class="col-md-9 ps-3">
-                                              <div class="card-body ps-2 pe-5  mt-1 pb-0">
-                                                <h5 class="card-title mb-0 Noto-Sans">高雄體驗會｜免費參加送帆布袋</h5>
-                                                <p class="card-text mb-2"><small
-                                                    class="m-0 text-muted Baloo-Tamm">2021-6-20</small></p>
-                                                <span class="text-muted"></span>
-                                                <p class="card-text d-block text-secondary Noto-Sans mb-0">
-                                                  大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！
-                                                </p>
-                                                <a class=" fw-bold btn p-0 3" style="color:#FF785E ;">MORE</a>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-               </div>
-           <div class="tab-pane fade  show active" id="nav-message" role="tabpanel"
-              aria-labelledby="nav-contact-tab">
-
+            <div class="tab-pane fade " id="nav-progress" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <div class="card mb-3 ">
+                <div class="row g-0">
+                  <div class="col-4 col-md-3">
+                    <img class="img-fluid" style="height: 100%;"
+                      src="https://hexschool.github.io/boootstrap5WebLayout/assets/news01.jpg" alt="...">
+                  </div>
+                  <div class="col-8 col-md-9 ps-lg-3">
+                    <div class="card-body ps-lg-2 pe-lg-5 mt-lg-1 pb-lg-0">
+                      <h5 class="card-title mb-0 Noto-Sans">高雄體驗會｜免費參加送帆布袋</h5>
+                      <p class="card-text mb-2"><small class="m-0 text-muted Baloo-Tamm">2021-6-20</small></p>
+                      <span class="text-muted"></span>
+                      <p class="d-none d-lg-block d-md-block card-text d-block text-secondary Noto-Sans mb-0">
+                        大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！
+                      </p>
+                      <a class=" fw-bold btn p-0 3" style="color:#FF785E ;">MORE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-4 col-md-3">
+                    <img class="img-fluid" style="height: 100%;"
+                      src="https://hexschool.github.io/boootstrap5WebLayout/assets/news02.jpg" alt="...">
+                  </div>
+                  <div class="col-8 col-md-9 ps-lg-3">
+                    <div class="card-body ps-lg-2 pe-lg-5  mt-1 pb-0">
+                      <h5 class="card-title mb-0 Noto-Sans">高雄體驗會｜免費參加送帆布袋</h5>
+                      <p class="card-text mb-2"><small class="m-0 text-muted Baloo-Tamm">2021-6-20</small></p>
+                      <span class="text-muted"></span>
+                      <p class="d-none d-lg-block d-md-block card-text d-block text-secondary Noto-Sans mb-0">
+                        大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！
+                      </p>
+                      <a class=" fw-bold btn p-0 3" style="color:#FF785E ;">MORE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>           
+            
+              <div class="card mb-3">
+                <div class=" row g-0">
+                  <div class="col-4 col-md-3 col-lg-9">
+                    <img class="img-fluid" style="height: 100%;"
+                      src="https://hexschool.github.io/boootstrap5WebLayout/assets/news03.jpg" alt="...">
+                  </div>
+                  <div class="col-8 col-md-9 col-lg-9 ps-lg-3">
+                    <div class="card-body ps-lg-2 pe-lg-5 mt-1 pb-0">
+                      <h5 class="card-title mb-0 Noto-Sans">高雄體驗會｜免費參加送帆布袋</h5>
+                      <p class="card-text mb-2"><small class="m-0 text-muted Baloo-Tamm">2021-6-20</small></p>
+                      <span class="text-muted"></span>
+                      <p class="d-none d-lg-block d-md-block card-text d-block text-secondary Noto-Sans mb-0">
+                        大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！
+                      </p>
+                      <a class=" fw-bold btn p-0 3" style="color:#FF785E ;">MORE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>            
+            </div>
+           <div class="tab-pane fade  show active" id="nav-message" role="tabpanel" aria-labelledby="nav-contact-tab">
                   <!-- 留言 -->
                   <div class="card border border-2 p-2 mb-3" style="border-radius: 15px;">
                     <div class="card-body">

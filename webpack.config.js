@@ -101,8 +101,7 @@ module.exports = {
       //         },
       //         gifsicle: {
       //           interlaced: false,
-      //         },
-              
+      //         },              
       //       }
       //     },
       //   ],
@@ -125,7 +124,7 @@ module.exports = {
   devtool: "source-map",
   devServer: {
     compress:true,
-    contentBase: "./dist",
+    contentBase: path.join(__dirname, 'dist'),
     port:3030,
     // stats:{
     //   assets:true,

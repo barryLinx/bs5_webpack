@@ -9,7 +9,9 @@
     "start": "cross-env NODE_ENV=development webpack",
     "dev": "cross-env NODE_ENV=development webpack serve --open "
   },
-  "keywords": [],
+  "keywords": [
+    "bootstrap -v5"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -32,6 +34,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.1"
   }
