@@ -81,6 +81,14 @@
   border-bottom: 5px solid var(--my-primary);
 }
 
+.overflow-style {
+  position: sticky!important;
+  height: calc(100vh - 58px);
+  overflow: auto!important;
+  top: 85px;
+  }
+
+
 // .ls-1{
 //   letter-spacing: 1.5px;
 // }
